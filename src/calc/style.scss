@@ -1,0 +1,90 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    button {
+        padding: 10px 20px;
+        margin-top: 20px;
+        border: none;
+        border-radius: 4px;
+        background-color: skyblue;
+        color: #fff;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: tomato;
+        }
+    }
+    .list {
+        display: flex;
+        flex-wrap: wrap;
+
+        .item {
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            img {
+                width: 100px;
+                height: auto;
+            }
+            &:hover {
+                background-color: #f0f0f0;
+            }
+        }
+    }
+    .form {
+        margin-top: 20px;
+        select {
+            padding: 5px;
+            margin-right: 10px;
+        }
+        button {
+            padding: 5px 10px;
+            background-color: skyblue;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            &:hover {
+                background-color: tomato;
+            }
+        }
+    }
+    .icon {
+        margin-top: 20px;
+        position: absolute;
+        right: 25%;
+        font-size: 30px;
+        font-weight: 700;
+
+        svg {
+            font-size: 50px;
+        }
+    }
+    .cart {
+        margin-top: 20px;
+        .cartitem {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+            &:last-child {
+                border-bottom: none;
+            }
+            button {
+                background-color: tomato;
+                color: #fff;
+                border: none;
+                border-radius: 4px;
+                padding: 5px 10px;
+                cursor: pointer;
+                &:hover {
+                    background-color: tomato;
+                }
+            }
+        }
+    }
+}
